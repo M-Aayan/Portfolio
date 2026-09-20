@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #08090D;
+  --surface-color: #101116;
+  --card-color: #15171D;
+  --border-color: #262832;
+  --text-primary: #F5F5F5;
+  --text-secondary: #A5A7B0;
+  --accent-color: #8B3DFF;
+  --accent-light: #B56CFF;
+  --accent-secondary: #FF4D4D;
+  --noise-opacity: 0.03;
+  --card-hover-bg: #1A1D26;
+}
+
+html.light {
+  /* Comprehensive Light Mode System overrides */
+  --bg-color: #FFFFFF;
+  --surface-color: #FAF5FF;
+  --card-color: #F5EEFF;
+  --border-color: #E9D5FF;
+  --text-primary: #18181B;
+  --text-secondary: #475569;
+  --accent-color: #8B3DFF;
+  --accent-light: #A855F7;
+  --accent-secondary: #EF4444;
+  --noise-opacity: 0.01;
+  --card-hover-bg: #F3E8FF;
+}
+
+/* Light mode utility class overrides for Tailwind dark: classes & hardcoded colors */
+html.light body {
+  background-color: #FFFFFF !important;
+  color: #18181B !important;
+}
+
+html.light .bg-dark-bg {
+  background-color: #FFFFFF !important;
+}
+
+html.light .bg-dark-card,
+html.light .bg-dark-card\/50,
+html.light .bg-dark-card\/60,
+html.light .bg-dark-card\/70,
+html.light .bg-dark-card\/90 {
+  background-color: #FAF5FF !important;
+}
+
+html.light .border-dark-border,
+html.light .border-dark-border\/40,
+html.light .border-dark-border\/60,
+html.light .border-dark-border\/80 {
+  border-color: #E9D5FF !important;
+}
+
+html.light .text-primaryText {
+  color: #18181B !important;
+}
+
+html.light .text-secondaryText {
+  color: #475569 !important;
+}
+
+/* Light Red & Light Purple accent highlights in Light Mode */
+html.light .bg-accent\/10 {
+  background-color: rgba(139, 61, 255, 0.12) !important;
+}
+
+html.light .bg-purple-500\/10 {
+  background-color: rgba(239, 68, 68, 0.12) !important;
+}
+
+html.light .text-purple-500,
+html.light .text-purple-400 {
+  color: #EF4444 !important;
+}
+
+html.light .border-purple-500\/30,
+html.light .border-purple-500\/20 {
+  border-color: rgba(239, 68, 68, 0.3) !important;
+}
+
+/* Lenis smooth scrolling configuration */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+
+/* Custom Base Styling with Smooth Theme Transitions */
+html, body, div, section, header, footer, card, input, textarea, button {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Heading Typography */
+h1, h2, h3, h4, h5, h6, .font-display {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}
+
+/* Selection Highlight */
+::selection {
+  background-color: rgba(139, 61, 255, 0.35);
+  color: #FFFFFF;
+}
+
+/* Noise overlay texture */
+.noise-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  content: "";
+  opacity: var(--noise-opacity);
+  pointer-events: none;
+  z-index: 99;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(16, 17, 22, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-color);
+}
+
+html.light .glass-panel {
+  background: rgba(255, 255, 255, 0.92) !important;
+  border: 1px solid #E9D5FF !important;
+  box-shadow: 0 4px 20px rgba(139, 61, 255, 0.08) !important;
+}
+
+/* Eyebrow Micro-Label Styling */
+.eyebrow {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent-light);
+  font-weight: 600;
+}
+
+html.light .eyebrow {
+  color: #8B3DFF !important;
+}
