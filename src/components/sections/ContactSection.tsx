@@ -168,7 +168,7 @@ export function ContactSection() {
                   <input
                     type="text"
                     required
-                    placeholder="e.g. John Doe"
+                    placeholder="Enter your name"
                     className="w-full px-4 py-3 rounded-xl border border-dark-border bg-dark-bg text-sm text-primaryText placeholder:text-secondaryText/50 focus:outline-none focus:border-accent transition-colors"
                   />
                 </div>
@@ -179,7 +179,7 @@ export function ContactSection() {
                   <input
                     type="email"
                     required
-                    placeholder="e.g. john@company.com"
+                    placeholder="Enter your mail"
                     className="w-full px-4 py-3 rounded-xl border border-dark-border bg-dark-bg text-sm text-primaryText placeholder:text-secondaryText/50 focus:outline-none focus:border-accent transition-colors"
                   />
                 </div>

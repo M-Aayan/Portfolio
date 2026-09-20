@@ -19,10 +19,10 @@ const PROJECTS: Project[] = [
     id: "proj-notenest",
     title: "NoteNest",
     category: "REACT & WEB APP",
-    year: "2025",
+    year: "2026",
     description:
       "A clean, efficient note-taking application designed for seamless thought organization, note management, and responsive usability.",
-    tags: ["React", "JavaScript", "CSS3", "Local Storage"],
+    tags: ["React", "JavaScript", "Tailwind", "HTML5"],
     image: "/notenest.png",
     live: "https://m-aayan.github.io/NoteNest-/",
   },
@@ -30,7 +30,7 @@ const PROJECTS: Project[] = [
     id: "proj-js-hub",
     title: "JavaScript Learning Path",
     category: "LEARNING PLATFORM",
-    year: "2025",
+    year: "2026",
     description:
       "A comprehensive JavaScript learning hub pairing core programming concepts with topic-wise hands-on practice projects.",
     tags: ["JavaScript", "HTML5", "CSS3", "GitHub Repos"],

@@ -5,7 +5,7 @@ import { Calendar, Building2, CheckCircle, GraduationCap } from "lucide-react";
 
 const TIMELINE = [
   {
-    period: "2025 – PRESENT",
+    period: "2024 Dec – PRESENT",
     role: "BACHELOR OF SCIENCE IN COMPUTER SCIENCE (BSCS)",
     company: "ILMA UNIVERSITY",
     badge: "4TH SEMESTER",
@@ -19,7 +19,7 @@ const TIMELINE = [
   {
     period: "PRESENT",
     role: "VIDEO EDITOR INTERN",
-    company: "ABC COMPANY",
+    company: "COMPANY",
     desc: "Developing editing, captioning, and visual storytelling skills using Premiere Pro, After Effects, and CapCut while continuing to advance toward full-stack web development.",
     highlights: [
       "Editing short-form and long-form video content with visual pacing and clear captions.",
@@ -92,11 +92,10 @@ export function ExperienceSection() {
 
               {/* Card Surface */}
               <div
-                className={`p-6 md:p-8 rounded-2xl border transition-all duration-300 ${
-                  item.isAcademic
+                className={`p-6 md:p-8 rounded-2xl border transition-all duration-300 ${item.isAcademic
                     ? "border-accent/50 bg-accent/5 hover:border-accent hover:shadow-glow"
                     : "border-dark-border bg-dark-card/50 hover:border-accent/40 hover:bg-dark-card"
-                }`}
+                  }`}
               >
                 {/* Date & Company Row */}
                 <div className="flex flex-wrap items-center justify-between gap-4 mb-3">
