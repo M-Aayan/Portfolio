@@ -17,17 +17,6 @@ const TIMELINE = [
     isAcademic: true,
   },
   {
-    period: "PRESENT",
-    role: "VIDEO EDITOR INTERN",
-    company: "COMPANY",
-    desc: "Developing editing, captioning, and visual storytelling skills using Premiere Pro, After Effects, and CapCut while continuing to advance toward full-stack web development.",
-    highlights: [
-      "Editing short-form and long-form video content with visual pacing and clear captions.",
-      "Collaborating on media workflows, visual storyboards, and thumbnail assets.",
-      "Building practical experience in video post-production and creative visual storytelling.",
-    ],
-  },
-  {
     period: "PRACTICAL EXPERIENCE",
     role: "INDEPENDENT FRONTEND DEVELOPER",
     company: "SELF-DIRECTED / PROJECTS",
@@ -76,7 +65,7 @@ export function ExperienceSection() {
             EXPERIENCE &amp; GROWTH
           </h2>
           <p className="text-secondaryText text-sm max-w-3xl mt-3 leading-relaxed">
-            A timeline of my academic journey at Ilma University, independent frontend development practice, and ongoing experience as a Video Editor Intern at ABC Company.
+            A timeline of my academic journey at Ilma University, independent frontend development practice, and ongoing growth toward full-stack development, with a growing interest in cybersecurity.
           </p>
         </div>
 

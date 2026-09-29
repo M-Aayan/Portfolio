@@ -12,16 +12,16 @@ export function ProfileImage({ imagePath, altText = "Muhammad Aayan Shaikh" }: P
   const [imageError, setImageError] = useState(false);
 
   return (
-    <div className="w-full h-full min-h-[380px] rounded-2xl border border-dark-border bg-dark-card overflow-hidden relative flex flex-col justify-end p-8 group">
-      {/* Grayscale/Color Overlay Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-t from-dark-bg via-dark-card/60 to-transparent z-10" />
+    <div className="w-full min-h-[440px] sm:min-h-[460px] rounded-2xl border border-dark-border/80 bg-dark-card overflow-hidden relative flex flex-col justify-end p-6 md:p-8 group shadow-2xl transition-all duration-500 hover:border-accent/50 hover:shadow-glow">
+      {/* Editorial Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-dark-bg via-dark-card/40 to-transparent z-10 opacity-90 transition-opacity duration-300 group-hover:opacity-75" />
 
       {imagePath && !imageError ? (
         <img
           src={imagePath}
           alt={altText}
           onError={() => setImageError(true)}
-          className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 opacity-90"
+          className="absolute inset-0 w-full h-full object-cover object-[center_top] group-hover:scale-105 transition-transform duration-700 filter grayscale contrast-125 group-hover:grayscale-0 transition-all duration-500"
         />
       ) : (
         /* Styled Fallback Frame for Profile Image */
@@ -33,7 +33,7 @@ export function ProfileImage({ imagePath, altText = "Muhammad Aayan Shaikh" }: P
             MUHAMMAD AAYAN SHAIKH
           </span>
           <span className="text-xs font-mono text-accent-light mt-1">
-            FRONTEND DEVELOPER &amp; VIDEO EDITOR INTERN
+            FRONTEND DEVELOPER &amp; UI DESIGNER
           </span>
         </div>
       )}

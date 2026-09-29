@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useEffect, useRef } from "react";
-import { VideoEditorHeroWidget } from "../hero/VideoEditorHeroWidget";
+import { CodeEditorHeroWidget } from "../hero/CodeEditorHeroWidget";
 import { TypingAnimation } from "../hero/TypingAnimation";
-import { ArrowDownRight, FileText, Code2, Film, Sparkles } from "lucide-react";
+import { ArrowDownRight, FileText, Code2, Sparkles, CodeIcon } from "lucide-react";
 import gsap from "gsap";
 
 export function HeroSection() {
@@ -39,8 +39,8 @@ export function HeroSection() {
               // FRONTEND DEVELOPER
             </span>
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-purple-500/10 border border-purple-500/30 text-accent-light text-xs font-mono font-semibold tracking-wider">
-              <Film className="w-3.5 h-3.5" />
-              // ASPIRING VIDEO EDITOR
+              <CodeIcon className="w-3.5 h-3.5" />
+              // ASPIRING FULL-STACK DEVELOPER
             </span>
             <span className="hidden sm:inline-flex items-center gap-1 text-xs text-secondaryText font-mono">
               <Sparkles className="w-3 h-3 text-amber-400" /> OPEN FOR FREELANCING
@@ -54,7 +54,7 @@ export function HeroSection() {
 
           {/* Exact Hero Description from Brief */}
           <p className="hero-anim text-base md:text-lg text-secondaryText max-w-xl font-normal leading-relaxed mb-8">
-            Frontend Developer focused on crafting clean, responsive, and engaging digital experiences. Skilled in modern frontend technologies and currently exploring video editing to bring stronger visual storytelling and creativity to my work.
+            Frontend Developer crafting clean, responsive web interfaces. Currently expanding into backend development and databases to become a full-stack developer, with a growing focus on cybersecurity to build more secure applications.
           </p>
 
           {/* Action CTAs */}
@@ -83,9 +83,9 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Right Column: Interactive Video Editor Workspace Panel Widget */}
+        {/* Right Column: Interactive Code Editor Panel Widget */}
         <div className="hero-anim lg:col-span-5 flex justify-center items-center relative">
-          <VideoEditorHeroWidget />
+          <CodeEditorHeroWidget />
         </div>
       </div>
     </section>

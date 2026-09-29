@@ -97,7 +97,7 @@ export function WorkSection() {
             FEATURED FRONTEND PROJECTS
           </h2>
           <p className="text-secondaryText text-sm max-w-2xl mt-3">
-            A curated showcase of 4 featured projects demonstrating web development, interactive frontend interfaces, and UI/UX design.
+            A curated selection of featured projects showcasing web development, interactive React interfaces, and UI design.
           </p>
         </div>
 

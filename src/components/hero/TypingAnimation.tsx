@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 const PHRASES = [
   "Muhammad Aayan Shaikh",
   "Frontend Developer",
-  "Video Editor",
+  "Aspiring Full-stack Developer",
 ];
 
 export function TypingAnimation() {

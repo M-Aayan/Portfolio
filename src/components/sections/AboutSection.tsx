@@ -8,7 +8,7 @@ import gsap from "gsap";
 const METADATA = [
   { icon: MapPin, label: "LOCATION", value: "Karachi, Pakistan" },
   { icon: GraduationCap, label: "DEGREE", value: "Bachelor in Computer Science" },
-  { icon: Cpu, label: "DUAL FOCUS", value: "Frontend Development & Aspiring Video Editor" },
+  { icon: Cpu, label: "FOCUS ON", value: "Frontend Developer & Aspiring Full-stack developer" },
   { icon: Briefcase, label: "AVAILABILITY", value: "Open for Freelancing" },
 ];
 
@@ -44,24 +44,26 @@ export function AboutSection() {
         <div className="about-fade mb-12">
           <span className="eyebrow">// ABOUT ME</span>
           <h2 className="text-3xl md:text-5xl font-display font-bold text-primaryText mt-2">
-            CODE, DESIGN &amp; VISUAL STORYTELLING
+            FRONTEND DEVELOPER GROWING TOWARD FULL STACK
           </h2>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
           {/* Left Column: Personal Profile Image */}
-          <div className="about-fade lg:col-span-5 relative">
-            <ProfileImage imagePath="/aayan_profile.jpg" altText="Muhammad Aayan Shaikh" />
+          <div className="about-fade lg:col-span-5 relative flex items-center justify-center">
+            <div className="w-full max-w-md mx-auto">
+              <ProfileImage imagePath="/aayan_profile.jpg" altText="Muhammad Aayan Shaikh" />
+            </div>
           </div>
 
           {/* Right Column: Bio Narrative & Metadata Matrix */}
           <div className="about-fade lg:col-span-7 flex flex-col justify-between space-y-8">
             <div className="space-y-4 text-secondaryText text-base leading-relaxed">
               <p>
-                I am a multidisciplinary developer and creative working at the intersection of modern frontend development, UI design, and visual storytelling. With hands-on experience in HTML, CSS, JavaScript, React, Git, GitHub, and Figma, I build clean, responsive, and engaging digital experiences while continuously expanding my creative skill set through video editing.
+                I'm a frontend developer and UI designer specializing in modern, responsive web interfaces. With hands-on experience in HTML, CSS, JavaScript, React, Git, GitHub, and Figma, I build clean, user-focused designs and interactive React applications.
               </p>
               <p>
-                From developing interactive web interfaces and React applications to designing polished UI concepts and editing visual content with Premiere Pro, After Effects, and CapCut, my focus is on combining technical precision with strong visual design. Currently, I am expanding into backend development and advanced video editing, working toward becoming a versatile full-stack developer and video editor.
+                I'm currently expanding into backend development and databases, working toward becoming a versatile full-stack developer, with a growing interest in cybersecurity to build more secure applications along the way.
               </p>
             </div>
 

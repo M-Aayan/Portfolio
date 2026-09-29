@@ -7,21 +7,28 @@ import { Navbar } from "@/components/navigation/Navbar";
 import { Footer } from "@/components/navigation/Footer";
 
 export const metadata: Metadata = {
-  title: "Muhammad Aayan Shaikh — Frontend Developer & Video Editor Intern",
+  title: "Muhammad Aayan Shaikh — Frontend Developer",
   description:
-    "Personal portfolio of Muhammad Aayan Shaikh, Frontend Developer & Video Editor Intern based in Karachi, Pakistan.",
+    "Personal portfolio of Muhammad Aayan Shaikh, Frontend Developer based in Karachi, Pakistan.",
   keywords: [
     "Muhammad Aayan Shaikh",
     "Frontend Developer",
-    "Video Editor Intern",
     "React",
     "JavaScript",
     "Tailwind CSS",
-    "Premiere Pro",
+    "UI Designer",
     "Karachi",
     "Portfolio",
   ],
   authors: [{ name: "Muhammad Aayan Shaikh" }],
+  icons: {
+    icon: [
+      { url: "/favicon.png", type: "image/png" },
+      { url: "/favicon.ico", sizes: "any" }
+    ],
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export const viewport = {

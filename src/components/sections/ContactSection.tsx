@@ -67,7 +67,7 @@ export function ContactSection() {
             </span>
           </h2>
           <p className="text-secondaryText text-base md:text-lg max-w-2xl mt-6 leading-relaxed">
-            Have a frontend project, UI design, or video editing idea in mind? Feel free to reach out and let’s discuss the project, requirements, and how I can contribute.
+            Have a frontend project or UI design idea in mind? Feel free to reach out and let’s discuss the project, requirements, and how I can contribute.
           </p>
         </div>
 
@@ -124,27 +124,57 @@ export function ContactSection() {
               <span className="text-xs font-mono text-secondaryText uppercase tracking-widest block">
                 // CONNECT ONLINE
               </span>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-col gap-3">
                 <a
                   href="https://github.com/M-Aayan"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2.5 rounded-lg border border-dark-border bg-dark-bg text-xs font-mono text-secondaryText hover:text-primaryText hover:border-accent flex items-center gap-2 transition-all"
+                  className="px-4 py-3 rounded-xl border border-dark-border bg-dark-bg text-xs font-mono text-secondaryText hover:text-primaryText hover:border-accent hover:shadow-glow flex items-center justify-between group transition-all duration-300"
                 >
-                  <Github className="w-4 h-4 text-accent" />
-                  <span>github.com/M-Aayan</span>
-                  <ArrowUpRight className="w-3 h-3" />
+                  <div className="flex items-center gap-3">
+                    <Github className="w-4 h-4 text-accent group-hover:scale-110 transition-transform" />
+                    <span className="font-semibold">GitHub</span>
+                  </div>
+                  <div className="flex items-center gap-1.5 text-[11px] text-secondaryText/70 group-hover:text-accent">
+                    <span>M-Aayan</span>
+                    <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  </div>
                 </a>
 
                 <a
                   href="https://linkedin.com/in/muhammad-aayan-shaikh"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="px-4 py-2.5 rounded-lg border border-dark-border bg-dark-bg text-xs font-mono text-secondaryText hover:text-primaryText hover:border-accent flex items-center gap-2 transition-all"
+                  className="px-4 py-3 rounded-xl border border-dark-border bg-dark-bg text-xs font-mono text-secondaryText hover:text-primaryText hover:border-accent hover:shadow-glow flex items-center justify-between group transition-all duration-300"
                 >
-                  <Linkedin className="w-4 h-4 text-accent" />
-                  <span>linkedin.com/in/muhammad-aayan-shaikh</span>
-                  <ArrowUpRight className="w-3 h-3" />
+                  <div className="flex items-center gap-3">
+                    <Linkedin className="w-4 h-4 text-accent group-hover:scale-110 transition-transform" />
+                    <span className="font-semibold">LinkedIn</span>
+                  </div>
+                  <div className="flex items-center gap-1.5 text-[11px] text-secondaryText/70 group-hover:text-accent">
+                    <span>muhammad-aayan-shaikh</span>
+                    <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  </div>
+                </a>
+
+                <a
+                  href="https://www.behance.net/muhammashaikh48"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-3 rounded-xl border border-dark-border bg-dark-bg text-xs font-mono text-secondaryText hover:text-primaryText hover:border-accent hover:shadow-glow flex items-center justify-between group transition-all duration-300"
+                >
+                  <div className="flex items-center gap-3">
+                    <svg className="w-5 h-5 text-accent group-hover:scale-110 transition-transform" viewBox="0 0 24 24" id="behance" xmlns="http://www.w3.org/2000/svg">
+                      <path id="secondary" d="M14,14h7v-.5A3.5,3.5,0,0,0,17.5,10h0A3.5,3.5,0,0,0,14,13.5v1A3.5,3.5,0,0,0,17.5,18a3.45,3.45,0,0,0,1.82-.52" style={{ fill: "none", stroke: "rgb(44, 169, 188)", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2 }}></path>
+                      <line id="secondary-2" x1="15" y1="6" x2="20" y2="6" style={{ fill: "none", stroke: "rgb(44, 169, 188)", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2 }}></line>
+                      <path id="primary" d="M7,18H3V12H7a3,3,0,0,1,3,3h0A3,3,0,0,1,7,18ZM9,9H9A3,3,0,0,0,6,6H3v6H6A3,3,0,0,0,9,9Z" style={{ fill: "none", stroke: "currentColor", strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2 }}></path>
+                    </svg>
+                    <span className="font-semibold">Behance</span>
+                  </div>
+                  <div className="flex items-center gap-1.5 text-[11px] text-secondaryText/70 group-hover:text-accent">
+                    <span>muhammashaikh48</span>
+                    <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  </div>
                 </a>
               </div>
             </div>
@@ -193,9 +223,6 @@ export function ContactSection() {
                 <select className="w-full px-4 py-3 rounded-xl border border-dark-border bg-dark-bg text-sm text-primaryText focus:outline-none focus:border-accent transition-colors">
                   <option value="UI Design">UI Design</option>
                   <option value="Frontend Project">Frontend Project</option>
-                  <option value="Video Editing / Caption / Color Correction">
-                    Video Editing / Caption / Color Correction
-                  </option>
                 </select>
               </div>
 

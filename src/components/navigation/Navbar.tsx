@@ -57,11 +57,13 @@ export function Navbar() {
         <a
           href="#home"
           onClick={(e) => scrollToSection(e, "#home")}
-          className="group flex items-center gap-2.5 font-display text-base md:text-lg tracking-wider font-bold text-primaryText transition-all duration-300"
+          className="group flex items-center gap-3 font-display text-base md:text-lg tracking-wider font-bold text-primaryText transition-all duration-300"
         >
-          <span className="w-9 h-9 rounded-lg bg-accent/20 border border-accent/40 flex items-center justify-center text-accent group-hover:bg-accent group-hover:text-white group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-sm">
-            M
-          </span>
+          <img
+            src="/logo.png"
+            alt="Muhammad Aayan Shaikh Logo"
+            className="h-8 md:h-9 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+          />
           <div className="relative overflow-hidden font-bold tracking-tight h-7 flex items-center">
             <span
               className={`inline-block transition-all duration-500 transform group-hover:translate-x-1 ${
@@ -70,7 +72,7 @@ export function Navbar() {
                   : "opacity-0 -translate-y-4 absolute"
               }`}
             >
-              MUHAMMAD
+              FRONTEND DEVELOPER
             </span>
             <span
               className={`inline-block text-accent transition-all duration-500 transform group-hover:translate-x-1 ${
