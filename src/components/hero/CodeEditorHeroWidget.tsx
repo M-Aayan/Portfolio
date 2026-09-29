@@ -7,7 +7,7 @@ const INITIAL_CODE: Record<string, string> = {
   "developer.js": `const developer = {
   name: "Muhammad Aayan Shaikh",
   role: "Frontend Developer",
-  learning: ["Next.js", "Backend", "Databases"]
+  learning: ["React.js", "Backend", "Databases"]
 };
 
 console.log("Hello from " + developer.name);`,
