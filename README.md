@@ -13,7 +13,7 @@ A modern personal portfolio showcasing my work as a Frontend Developer and aspir
 - Interactive animations and UI effects
 - Featured frontend projects
 - Skills and experience section
-- Video editing showcase
+- A small built-in code editor component
 - Downloadable CV
 - Contact and social links
 
